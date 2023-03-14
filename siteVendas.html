@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 2 - CSS Seletores</title>
+    <style type="text/css">
+        .card {
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;
+            min-width: 200px;
+            min-height: 200px;
+        }
+
+        .card div {
+            display: inline-flex;
+
+            align-items: center;
+            flex-direction: row;
+
+            vertical-align: central;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: linear-gradient(rgba(83, 206, 183), rgba(191, 213, 121)); background-attachment: fixed;">
+
+    <h1>
+        Planos de hospedagem perfeitos
+    </h1>
+
+    <p>
+        Para empresários e indivíduos, nós provemos soluções de hospedagem web completa
+    </p>
+
+    <div>
+
+
+
+        <div class="card" style="border: 2px; border-color: black; border-style: solid;">
+            <div style="background-color: black; color: white; text-align: center;
+            padding-left: 50px; padding-right: 50px; font-size: 30; font-weight: 700;
+            width: 75%;"
+            ></div>
+
+            <div class="gratis" style="background-color: black; color: white; text-align: center;
+                font-size: 30; font-weight: 700; width: 100%;">
+                Grátis
+            </div>
+
+            <div style="background-color:white; text-align: center; font-size: 30; font-weight: 700;">
+                <div>
+                    <img src="arvore.png" />
+                    <span>R$ 0</span>
+                </div>
+                <div style="text-align: left;">
+                    <ul>
+                        <li>1 Domínio</li>
+                        <li>1 Conta de email</li>
+                        <li>250 MB de espaço em disco</li>
+                        <li>5 GB de trâfego</li>
+                        <li>Site HTML</li>
+                    </ul>
+                </div>
+            </div>
+            <div>Compre agora!</div>
+        </div>
+
+
+
+        <div class="card">
+            <div, style="background-color: black; color: white; text-align: center;
+            padding-left: 50px; padding-right: 50px; font-size: 30; font-weight: 700;
+            ">Básico</div>
+        </div>
+
+
+
+        <div class="card">
+            <div>Empresarial</div>
+        </div>
+
+
+
+        <div class="card">
+            <div>Ilimitado</div>
+
+        </div>
+
+    </div>
+
+    <p>
+        Oferta especial para usuários novatos e garantia de dinheiro de volta em 30 dias caso haja cancelamento
+    </p>
+
+</body>
+
+</html>
