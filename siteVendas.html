@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Atividade 2 - CSS Seletores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style type="text/css">
         .card {
             display: inline-flex;
@@ -25,10 +28,17 @@
         .card ul {
             list-style: none;
         }
+
+        .head div {
+           display: block;
+           text-align: right;
+           width: 100%;
+        }
     </style>
 </head>
 
-<body style="background-image: linear-gradient(rgba(83, 206, 183), rgba(191, 213, 121)); background-attachment: fixed;">
+<body style="background-image: linear-gradient(rgba(83, 206, 183), rgba(191, 213, 121)); background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;">
 
     <h1>
         Planos de hospedagem perfeitos
@@ -39,38 +49,45 @@
     </p>
 
     <div>
+        <div class="card" style="border: 2px; border-color: black; border-style: solid; text-align: left;">
 
-
-
-        <div class="card" style="border: 2px; border-color: black; border-style: solid;">
-            <div style="background-color: black; color: white; text-align: center;
-            padding-left: 50px; padding-right: 50px; font-size: 30; font-weight: 700;
-            width: 75%;"
-            ></div>
-
-            <div class="gratis" style="background-color: black; color: white; text-align: center;
-                font-size: 30; font-weight: 700; width: 100%;">
+            <header class="gratis" style="background-color: black; color: white; text-align: center;
+                font-size: 32px; font-weight: 500; width: 100%; padding-top: 10px; padding-bottom: 10px;">
                 Grátis
-            </div>
+            </header>
 
-            <div style="background-color:white; text-align: center; font-size: 30; font-weight: 700;">
-                <div>
-                    <img src="arvore.png" />
-                    <span>R$ 0</span>
-                </div>
-                <div style="text-align: left;">
-                    <ul>
-                        <li>1 Domínio</li>
-                        <li>1 Conta de email</li>
-                        <li>250 MB de espaço em disco</li>
-                        <li>5 GB de trâfego</li>
-                        <li>Site HTML</li>
-                    </ul>
-                </div>
-            </div>
-            <div>Compre agora!</div>
+           <table style="background-color:white; font-size: 32px; font-weight: 700; padding: 10px;">
+                <tr>
+                    <td style="background-color:white; font-size: 16px; font-weight: 700; width: 100%;">
+                        <div class="head">
+                            <div style="display: inline-flex;">
+                                <img src="img/flor-em-preto-e-branco.png" width="70px"/>
+                                <div>
+                                    <span style="font-size: 32px;">R$ 0</span><br>
+                                    <span style="font-size: 20px;">Por mês</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:white; font-size: 16px; font-weight: 700; width: 100%;">
+                        <ul>
+                            <li>1 Domínio</li>
+                            <li>1 Conta de email</li>
+                            <li>250 MB de espaço</li>
+                            <li>em disco</li>
+                            <li>5 GB de trâfego</li>
+                            <li>Site HTML</li>
+                        </ul>
+                    </td>
+                </tr>
+           </table>
+            <footer class="compre" style="background-color: black; color: white; text-align: center;
+            font-size: 26px; font-weight: 500; width: 100%; padding-top: 10px; padding-bottom: 10px;">
+                Compre agora!
+            </footer>
         </div>
-
 
 
         <div class="card">
