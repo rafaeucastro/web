@@ -12,58 +12,82 @@
             display: inline-flex;
             align-items: center;
             flex-direction: column;
-            min-width: 200px;
-            min-height: 200px;
+            border: 4px;
+            border-color: black;
+            border-style: solid;
+            text-align: left;
+            margin-left: 30px;
         }
 
         .card div {
             display: inline-flex;
-
             align-items: center;
             flex-direction: row;
-
+            margin-left: 8px;
+            margin-left: 8px;
             vertical-align: central;
         }
 
         .card ul {
             list-style: none;
+            background-color: white;
+            color: black;
+            text-align: left;
+            font-size: 18px;
+            font-weight: 500;
+            padding-left: 0;
         }
 
-        .head div {
+        .plan {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .price div {
            display: block;
            text-align: right;
            width: 100%;
+           font-weight: 900;
+           font-size: 40px;
         }
+
+        .icone {
+            width: 100px;
+        }
+
     </style>
 </head>
 
 <body style="background-image: linear-gradient(rgba(83, 206, 183), rgba(191, 213, 121)); background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;">
+    font-family: 'Roboto', sans-serif; text-align: center;">
 
-    <h1>
+    <h1 style="font-weight: 600; font-size: 60px;">
         Planos de hospedagem perfeitos
     </h1>
 
-    <p>
+    <p style="font-weight: 600; font-size: 30px; font-family: 'Times New Roman', Times, serif;">
         Para empresários e indivíduos, nós provemos soluções de hospedagem web completa
     </p>
 
-    <div>
-        <div class="card" style="border: 2px; border-color: black; border-style: solid; text-align: left;">
+    <div style="margin: 150px;">
+        <div class="card">
 
-            <header class="gratis" style="background-color: black; color: white; text-align: center;
-                font-size: 32px; font-weight: 500; width: 100%; padding-top: 10px; padding-bottom: 10px;">
-                Grátis
-            </header>
+            <header class="plan">Grátis</header>
 
            <table style="background-color:white; font-size: 32px; font-weight: 700; padding: 10px;">
                 <tr>
                     <td style="background-color:white; font-size: 16px; font-weight: 700; width: 100%;">
-                        <div class="head">
+                        <div class="price">
                             <div style="display: inline-flex;">
-                                <img src="img/flor-em-preto-e-branco.png" width="70px"/>
+                                <img src="img/flor-em-preto-e-branco.png" class="icone"/>
                                 <div>
-                                    <span style="font-size: 32px;">R$ 0</span><br>
+                                    <span>R$ 0</span><br>
                                     <span style="font-size: 20px;">Por mês</span>
                                 </div>
                             </div>
@@ -71,13 +95,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="background-color:white; font-size: 16px; font-weight: 700; width: 100%;">
+                    <td>
                         <ul>
                             <li>1 Domínio</li>
                             <li>1 Conta de email</li>
                             <li>250 MB de espaço</li>
                             <li>em disco</li>
-                            <li>5 GB de trâfego</li>
+                            <li>5 GB de tráfego</li>
                             <li>Site HTML</li>
                         </ul>
                     </td>
@@ -88,30 +112,124 @@
                 Compre agora!
             </footer>
         </div>
+        
+        <div class="card" style="border-color: green;">
 
+            <header class="plan" style="background-color: green;">Básico</header>
 
-        <div class="card">
-            <div, style="background-color: black; color: white; text-align: center;
-            padding-left: 50px; padding-right: 50px; font-size: 30; font-weight: 700;
-            ">Básico</div>
+           <table style="background-color:white; font-size: 32px; font-weight: 700; padding: 10px;">
+                <tr>
+                    <td style="background-color:white; font-size: 16px; font-weight: 700; width: 100%;">
+                        <div class="price">
+                            <div style="display: inline-flex;">
+                                <img src="img/house.png" class="icone"/>
+                                <div>
+                                    <span>R$ 5</span><br>
+                                    <span style="font-size: 20px;">Por mês</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>5 Domínios</li>
+                            <li>5 Contas de email</li>
+                            <li>1GB de espaço</li>
+                            <li>em disco</li>
+                            <li>25 GB de tráfego</li>
+                            <li>5 Sites HTML</li>
+                        </ul>
+                    </td>
+                </tr>
+           </table>
+            <footer class="compre" style="background-color: green; color: white; text-align: center;
+            font-size: 26px; font-weight: 500; width: 100%; padding-top: 10px; padding-bottom: 10px;">
+                Compre agora!
+            </footer>
+        </div>
+
+        <div class="card" style="border-color: orange;">
+
+            <header class="plan" style="background-color: orange;">Empresarial</header>
+
+           <table style="background-color:white; font-size: 32px; font-weight: 700; padding: 10px;">
+                <tr>
+                    <td style="background-color:white; font-size: 16px; font-weight: 700; width: 100%;">
+                        <div class="price">
+                            <div style="display: inline-flex;">
+                                <img src="img/maleta.png" class="icone"/>
+                                <div>
+                                    <span>R$ 10</span><br>
+                                    <span style="font-size: 20px;">Por mês</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>10 Domínios</li>
+                            <li>10 Contas de email</li>
+                            <li>10 GB de espaço</li>
+                            <li>em disco</li>
+                            <li>500 GB de tráfego</li>
+                            <li>10 Sites HTML</li>
+                        </ul>
+                    </td>
+                </tr>
+           </table>
+            <footer class="compre" style="background-color: orange; color: white; text-align: center;
+            font-size: 26px; font-weight: 500; width: 100%; padding-top: 10px; padding-bottom: 10px;">
+                Compre agora!
+            </footer>
+        </div>
+
+        <div class="card" style="border-color: red;">
+
+            <header class="plan" style="background-color: red;">Ilimitado</header>
+
+           <table style="background-color:white; font-size: 32px; font-weight: 700; padding: 10px;">
+                <tr>
+                    <td style="background-color:white; font-size: 16px; font-weight: 700; width: 100%;">
+                        <div class="price">
+                            <div style="display: inline-flex;">
+                                <img src="img/coroa.png" class="icone"/>
+                                <div>
+                                    <span>R$ 19</span><br>
+                                    <span style="font-size: 20px;">Por mês</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Domínios ilimitados</li>
+                            <li>Contas de email</li>
+                            <li>ilimitadas</li>
+                            <li>Espaço em disco</li>
+                            <li>ilimitado</li>
+                            <li>Tráfego ilimitado</li>
+                        </ul>
+                    </td>
+                </tr>
+           </table>
+            <footer class="compre" style="background-color: red; color: white; text-align: center;
+            font-size: 26px; font-weight: 500; width: 100%; padding-top: 10px; padding-bottom: 10px;">
+                Compre agora!
+            </footer>
         </div>
 
 
-
-        <div class="card">
-            <div>Empresarial</div>
-        </div>
-
-
-
-        <div class="card">
-            <div>Ilimitado</div>
-
-        </div>
+       
 
     </div>
 
-    <p>
+    <p style="font-weight: 600; font-size: 22px;">
         Oferta especial para usuários novatos e garantia de dinheiro de volta em 30 dias caso haja cancelamento
     </p>
 
