@@ -1,0 +1,66 @@
+/* Estilize os elementos HTML de acordo com as instruções a seguir. */
+
+/* NÃO ALTERAR O HTML EXISTENTE PARA FAZER ISSO. ESCREVA APENAS CSS! PELO AMOR DE DEUS. */
+
+
+/* Dê ao elemento <body> a seguinte cor de fundo #bdc3c7 */
+
+
+/* Faça o elemento <h1> ter a cor #9b59b6 */
+
+
+/* Torna todos os elementos <h2> laranja */
+
+
+/* Torna todos os elementos <li> azuis (escolha seu próprio azul hexadecimal) */
+
+
+/* Altere o fundo em cada parágrafo para ficar amarelo */
+
+
+/* Faça com que todas as entradas de texto (input com type text) tenham uma borda vermelha de 3 pixels */
+
+
+/* Dar tudo com a classe 'hello' um fundo branco */
+
+
+/* Dê ao elemento com o ID 'special' uma borda azul sólida de 2px (escolha seu próprio rgb azul) */
+
+
+/* Faça todos os <p> que estão aninhados dentro de divs terem fonte com tamanho 25px */
+
+
+/* Faça apenas entradas com o tipo 'texto' com fundo cinza */
+
+
+/* Dê aos dois <p> dentro do terceiro <div> um fundo rosa */
+
+
+/* Dê ao 2º <p> dentro do 3º <div> uma borda branca de 5 pixels */
+
+
+/* Faça o <em> no terceiro elemento <div> ter fonte com a cor branca e fonte 20px */
+
+
+
+/* DESAFIOS BONUS */
+/* Você pode precisar pesquisar alguns outros seletores e propriedades */
+
+/* Faz com que todas as caixas de seleção "checkbox" tenham uma margem esquerda de 50px */
+
+
+/* Torne os elementos <label> todos em MAIÚSCULAS sem mudar o HTML (definitivamente pareça este acima */
+
+
+/* Faça a primeira letra do elemento com o id 'special' verde e 100px tamanho da fonte (tamanho da fonte: 100) */
+
+
+/* Faça com que a cor do elemento <h1> mude para azul quando passa o mouse sobre */
+
+
+/* Faça o elemento <a> que foi visitado ter cor de fonte cinza */
+
+
+a:hover {
+    border: 1px solid red;
+}
