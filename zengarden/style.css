@@ -45,37 +45,25 @@ header {
 	text-align: center;
   }
 
-  .summary {
+	.summary {
 	width: 100%;
 	height: 100px;
 	padding: 20px 0 5px 0;
 	margin-right: 30px;
 	background: white;
 	border-left: 30px solid white;
-
   }
+
   .summary p {
 	color: #000000;
 	font-style: italic;
 	width: 450px;
   }
- 
 
-.preamble{
-	padding: 40px;
-	border-left: 25px solid white;
-	border-right: 25px solid white;
-}
 
 html {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 18px;
-}
-
-body {
-	background-position: center;
-	background-repeat: no-repeat;
-	margin: 0;
 }
 
 footer {
@@ -90,25 +78,20 @@ h1{
 
 /* specific divs */
 .page-wrapper {
-	background-color: skyblue;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0;
 }
-
-/* .main {
-	background-color: white;
-	opacity: 0.8;
-	padding: 50px;
-	display: block;
-} */
 
 .explanation, .benefits{
-	background-color: black;
-	opacity: 0.8;
+	background-color: white;
 	padding: 40px;
 	display: block;
-	color: white;
+	color: black;
 }
 
-.participation, .requirements {
+.preamble, .participation, .requirements {
+	background-color: skyblue;
 	padding: 40px;
 	border-left: 25px solid white;
 	border-right: 25px solid white;
@@ -131,10 +114,16 @@ aside h3 {
 	padding-right: 60px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-color: white;
+	margin: 25px;
+	background-color: skyblue;
+	border: 4px solid darkblue;
 }
 
-.design-selection, .design-archives, .zen-resources{
+.sidebar a {
+	color: darkblue;
+}
+
+/* .design-selection, .design-archives, .zen-resources{
 	padding: 0px;
 	border: 1px doted black;
-}
+} */
