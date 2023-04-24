@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.header {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+}
+
+.company-name {
+    font-size: 40;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 300%;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    box-shadow: 2px 1px 5px gray;
+}

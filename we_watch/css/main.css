@@ -1,0 +1,8 @@
+.watch {
+    background-image: url(../img/kids_watching.png);
+    background-position: center;
+    height: 900px;
+}
+.watch * {
+    color: white;
+}
