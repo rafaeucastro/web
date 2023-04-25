@@ -2,17 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 .header {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    background-color: white;
-    padding: 30px;
+    justify-content: center;
+    height: 80px;
 }
 
-.company-name {
-    font-size: 40;
-    color: black;
+header h2 {
     font-family: 'Raleway', sans-serif;
-    padding-right: 300%;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.dropdown-language-selection {
+    padding-left: 30%;
+    padding-right: 2%;
 }
 
 .btn-secondary {
