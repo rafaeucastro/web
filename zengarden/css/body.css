@@ -32,6 +32,8 @@ h1{
 	padding: 40px;
 	display: block;
 	color: white;
+	border-left: 25px solid white;
+	border-right: 25px solid white;
 }
 
 .participation, .requirements, .preamble{
@@ -39,6 +41,14 @@ h1{
 	padding: 40px;
 	border-left: 25px solid white;
 	border-right: 25px solid white;
+}
+
+.explanation:hover, .benefits:hover{
+	background-color: black;
+	padding: 40px;
+	display: block;
+	color: white;
+	border: none;
 }
 
 .sidebar .wrapper {

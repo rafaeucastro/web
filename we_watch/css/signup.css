@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+main {
+    background-image: url(../img/movie.png);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    background-color: white;
+    width: 75vh;
+    padding: 40px;
+}
+
+.card * {
+    font-size: 12px;
+}
+
+.title h2 {
+    font-size: 30px;
+}
+
+.subtitle h3 {
+    font-size: 20px;
+}
+
+.form {
+    height: 60vh;
+}
+
+.form-group {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    width: 60vh;
+}
+
+#first-group {
+    display: flex;
+}
+
+.form-group div {
+    width: 29vh;
+}
