@@ -1,0 +1,32 @@
+footer {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.nav-item div {
+    padding: 10px;
+    width: 20vh;
+}
+
+.nav-item div:hover {
+    font-size: 20px;
+    color: black;
+}
+
+footer p:nth-of-type(1) {
+    font-size: 22px;
+}
+
+footer p:nth-of-type(n+2) {
+    font-size: 15px;
+}
