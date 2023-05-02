@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 main {
-    background-image: url(../img/movie.png);
+    background-image: url(../img/building.png);
     background-size: cover;
     height: 80vh;
     display: flex;
@@ -15,14 +15,11 @@ main {
     background-color: white;
     width: 75vh;
     padding: 40px;
+    text-align: center;
 }
 
 .card * {
     font-size: 12px;
-}
-
-.title h2 {
-    font-size: 30px;
 }
 
 .subtitle h3 {
@@ -48,18 +45,13 @@ main {
     padding: 12px;
 }
 
-#first-group {
-    display: flex;
-}
-
 .form-group div {
     width: 29vh;
 }
 
 .form button {
-    margin-top: 40px;
-    margin-left: 40%;
     text-align: center; 
     background-color: #9EC4F0;
     border: none;
+    margin-top: 24px;
 }

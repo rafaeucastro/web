@@ -19,8 +19,9 @@ nav ul{
 }
 
 .nav-item div:hover {
-    font-size: 20px;
+    font-weight: 600;
     color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 footer p:nth-of-type(1) {
