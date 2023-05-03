@@ -19,22 +19,18 @@
 
 .central-element {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .input-group {
-    accent-color: grey;
+    display: flex;
+    width: 100px;
     height: 50px;
 }
 
-.input {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    background-color: aquamarine;
-    height: 50px;
+.input-group input {
+    background-color: gray;
 }
 
 .equal {

@@ -1,6 +1,6 @@
-var firstNumber = parseInt(prompt('Digite um número'))
-var secondNumber = parseInt(prompt('Digite outro número'))
-var operation = prompt('Qual a operação?')
+// var firstNumber = parseInt(prompt('Digite um número'))
+// var secondNumber = parseInt(prompt('Digite outro número'))
+// var operation = prompt('Qual a operação?')
 var result = 0
 var operation = 'Somar'
 
