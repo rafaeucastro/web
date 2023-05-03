@@ -1,11 +1,8 @@
-var firstNumber = 0
-var secondNumber = 0
+var firstNumber = parseInt(prompt('Digite um número'))
+var secondNumber = parseInt(prompt('Digite outro número'))
+var operation = prompt('Qual a operação?')
 var result = 0
 var operation = 'Somar'
-
-firstNumber = parseInt(prompt('Digite um número'))
-secondNumber = parseInt(prompt('Digite outro número'))
-operation = prompt('Qual a operação?')
 
 switch(operation) {
     case 'Somar':
@@ -22,4 +19,4 @@ switch(operation) {
         break
 }
 
-document.write(result)
+document.write('<h1>' + 'Resultado: ' + result + '</h1>')
