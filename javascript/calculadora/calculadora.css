@@ -1,0 +1,53 @@
+.aba {
+    margin: 20px;
+    border: 4px solid black;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    height: 100px;
+    background-color: gold;
+}
+
+.body {
+    height: 400px;
+    background-color: white;
+    padding: 50px;
+}
+
+.central-element {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.input-group {
+    accent-color: grey;
+    height: 50px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-color: aquamarine;
+    height: 50px;
+}
+
+.equal {
+    font-size: 100px;
+}
+
+.result {
+    font-size: 80px;
+}
+
+.final-group {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
