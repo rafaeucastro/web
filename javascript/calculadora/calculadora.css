@@ -1,14 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .aba {
     margin: 20px;
-    border: 4px solid black;
+    border: 2px solid black;
+    width: 100vh;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .title {
     display: flex;
     justify-content: space-between;
+    background-color: #FFBF23;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 2px solid black;
     padding: 25px;
     height: 100px;
-    background-color: gold;
 }
 
 .body {
@@ -17,20 +28,24 @@
     padding: 50px;
 }
 
-.central-element {
+.first-group {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.input-group {
-    display: flex;
-    width: 100px;
+/* Campos de texto */
+.first-group input {
+    background-color: #EFEFF4;
+    border-radius: 30px;
+    padding: 20px;
     height: 50px;
+    width: 250px;
+    font-size: 30px;
 }
 
-.input-group input {
-    background-color: gray;
+.first-group input::placeholder {
+    font-size: 20px;
 }
 
 .equal {
@@ -41,9 +56,15 @@
     font-size: 80px;
 }
 
+/* Div para os dois botões no final */
 .final-group {
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+/* Botão calcular */
+.final-group .button {
+    background-color: #0ACB8B;
 }
