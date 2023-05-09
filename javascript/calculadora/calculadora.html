@@ -17,8 +17,8 @@
         <div class="body">
             <span>Digite os valores abaixo, selecione a opção e clique em calcular.</span>
             <div class="first-group">
-                <input type="text" class="form-control" placeholder="primeiro número" aria-label="firstNumber" aria-describedby="basic-addon1">
-                <input type="text" class="form-control" placeholder="segundo número" aria-label="secondNumber" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="primeiro número" aria-label="firstNumber" id="firstNumber" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="segundo número" aria-label="secondNumber" id="secondNumber" aria-describedby="basic-addon1">
                 <span class="equal">=</span>
                 <div class="result" id="result">
                     0
@@ -31,10 +31,10 @@
                       <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
                     <ul class="dropdown-menu" id="drop">
-                      <li><a class="dropdown-item" href="#" onclick="dropdownClicked('Somar')">Somar</a></li>
-                      <li><a class="dropdown-item" href="#" onclick="dropdownClicked('Subtrair')">Subtrair</a></li>
-                      <li><a class="dropdown-item" href="#" onclick="dropdownClicked('Multiplicar')">Multiplicar</a></li>
-                      <li><a class="dropdown-item" href="#" onclick="dropdownClicked('Dividir')">Dividir</a></li>
+                      <li><a class="dropdown-item" href="#">Somar</a></li>
+                      <li><a class="dropdown-item" href="#">Subtrair</a></li>
+                      <li><a class="dropdown-item" href="#">Multiplicar</a></li>
+                      <li><a class="dropdown-item" href="#">Dividir</a></li>
                     </ul>
                 </div>
                 <button type="button" class="btn btn-warning" id="calculate" onclick="calculate()">Calcular</button>

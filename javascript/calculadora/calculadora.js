@@ -1,25 +1,25 @@
 var firstNumber = 0
 var secondNumber = 0
-var operation = 0
 var result = 0
-var operation = 'Somar'
+var userChoice = 'Somar'
 
-function dropdownClicked(value) {
-    operation = value;
-}
+//seleciona todos os dropdows itens
+const dropdownItens = document.querySelectorAll('.dropdown-item');
 
-// Alterar as opções do dropdown
-const options = document.querySelectorAll('.dropdown-item');
-options.forEach(option => {
-    option.addEventListener('click', function(event) {
-        event.preventDefault;
-        dropdownClicked(option.textContent.trim());
-        document.querySelector('#default-value').innerHTML = option.textContent;
+dropdownItens.forEach(item => {
+    //para cada dropdown adicionar um evento para escutar o click
+    item.addEventListener('click', function(event) {
+        userChoice = item.textContent.trim();
+        const defaultDropdownValue = document.querySelector('#default-value')
+        defaultDropdownValue.textContent = item.textContent;
     })
 });
 
 function calculate() {
-    switch(operation) {
+    firstNumber = document.querySelector('#firstNumber').value
+    secondNumber = document.querySelector('#secondNumber').value
+
+    switch(userChoice) {
         case 'Somar':
             result = firstNumber + secondNumber
             break
@@ -34,10 +34,12 @@ function calculate() {
             break
     }
 
-    const result = document.querySelector('#result');
-    result.innerHTML = 'resul'
+    const resultText = document.querySelector('#result');
+    resultText.innerHTML = result
 }
 
-document.querySelector('#calculate').addEventListener('click', function() {
-    calculate();
-})
+function log() {
+    console.log(firstNumber)
+    console.log(userChoice)
+    console.log(secondNumber)
+}
