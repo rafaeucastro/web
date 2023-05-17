@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" style="margin: 20px;">
+        1. Alterando a cor de fundo de um parágrafo quando o mouse passa sobre ele.
+        Crie um parágrafo em HTML e use a propriedade onmouseover para mudar a cor de fundo quando o mouse passar sobre o parágrafo.
+        Use a propriedade onmouseout para mudar a cor de fundo de volta para a cor original quando o mouse sair do parágrafo.
+    </p>
+    <script>
+        function onMouseOver(element){
+            element.style.backgroundColor = 'bisque';
+        }
+        function onMouseOut(element){
+            element.style.backgroundColor = 'transparent';
+        }
+    </script>
+</body>
+</html>
