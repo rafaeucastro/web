@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex;">
+    <input
+        type="text"
+        placeholder="Digite algo aqui"
+        id="user_input"
+        class="campo_texto"
+        onkeypress="keyPressed(this)"
+    >
+    <div class="disabled_input">
+        <label for="letters">Letras</label>
+        <input type="text" disabled id="letters">
+    </div>
+    <div class="disabled_input">
+        <label for="numbers">Números</label>
+        <input type="text" disabled id="numbers">
+    </div>
+</body>
+    <script>
+        function keyPressed(input){
+            var inputText = input.value;
+            var letterInputTAG = document.getElementById("letters");
+            var numberInputTAG = document.getElementById("numbers");
+            var letters = [];
+            var numbers = [];
+
+            for (var index = 0; index < inputText.length; index++) {
+                var letter = inputText[index];
+                
+                if(true) {
+                    numberInputTAG.value = letter;
+                } else {
+                    letterInputTAG.append(letter);
+                }
+            }
+        }
+    </script>
+</html>
