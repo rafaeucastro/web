@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="display: flex;">
+<body>
     <input
         type="text"
         placeholder="Digite algo aqui"
@@ -25,21 +25,42 @@
 </body>
     <script>
         function keyPressed(input){
-            var inputText = input.value;
+            var inputText = input.value.split('');
+
             var letterInputTAG = document.getElementById("letters");
             var numberInputTAG = document.getElementById("numbers");
+
             var letters = [];
             var numbers = [];
 
             for (var index = 0; index < inputText.length; index++) {
                 var letter = inputText[index];
                 
-                if(true) {
-                    numberInputTAG.value = letter;
+                if(isNaN(letter)) {
+                    letters.push(letter);
                 } else {
-                    letterInputTAG.append(letter);
+                    numbers.push(letter);
                 }
             }
+
+            letterInputTAG.value = letters.toString();
+            numberInputTAG.value = numbers.toString();
         }
     </script>
+    <style>
+        body {
+            margin: 20px;
+            border: 2px groove orangered;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    
+        .campo_texto {
+            margin: 20px;
+        }
+
+        .disabled_input {
+            margin:  10px;
+        }
+    </style>
 </html>

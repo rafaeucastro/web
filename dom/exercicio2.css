@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+
+button {
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 125px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#container {
+    border: 2px solid black;
+    height: 50vh;
+    width: 50vw;
+    box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
