@@ -1,0 +1,15 @@
+input[type="radio" i] {
+  
+}
+
+input {
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+  display: flex; 
+}
