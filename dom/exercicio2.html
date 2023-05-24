@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <link rel="stylesheet" href="exercicio2.css">
+</head>
+<body>
+    <header>
+        <h1>Manipulando estilo</h1>
+    </header>
+    <main>
+        <div class="button-group">
+            <button id="red" onmousedown="removeBorder(this)" onmouseup="addBorder(this)" onclick="changeContainerColor('red')">Vermelho</button>
+            <button id="green" onmousedown="removeBorder(this)" onmouseup="addBorder(this)" onclick="changeContainerColor('green')">Verde</button>
+            <button id="blue" onmousedown="removeBorder(this)" onmouseup="addBorder(this)" onclick="changeContainerColor('blue')">Azul</button>
+        </div>
+
+        <div id="container"></div>
+    </main>
+    <script>
+        function changeContainerColor(color) {
+            var container = document.getElementById('container');''
+            container.style.backgroundColor = color;
+        }
+
+        var buttons = document.getElementsByTagName('button');
+
+        function removeBorder(button){
+            document.getElementById(button.id).style.border = 'none';
+        }
+
+        function addBorder(button){
+            document.getElementById(button.id).style.borderBottom = "4px solid rgba(0, 0, 0, 0.2)";
+        }
+    </script>
+</body>
+</html>
