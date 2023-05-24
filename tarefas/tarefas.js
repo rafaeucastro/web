@@ -5,12 +5,12 @@ function addTask(){
     var task = document.createElement("li");
 
     //delete button
-    var deleteIcon = document.createElement("i");
-    deleteIcon.className = "fa-light fa-delete-left";
+    // var deleteIcon = document.createElement("i");
+    // deleteIcon.className = "fa-light fa-delete-left";
     var deleteButton = document.createElement("button");
-    deleteButton.append(deleteIcon);
+    //deleteButton.append(deleteIcon);
     deleteButton.onclick = function () {
-        
+        taskList.removeChild(task);
     }
 
     //label
@@ -21,7 +21,6 @@ function addTask(){
     taskLabel.onclick = function (){
         taskLabel.style.border = "default";
         taskLabel.style.backgroundColor = "default";
-        task.appendChild(deleteButton);
     }
 
     //radio button
@@ -34,6 +33,7 @@ function addTask(){
     //append elements
     task.appendChild(radio);
     task.appendChild(taskLabel);
+    task.appendChild(deleteButton);
     taskList.appendChild(task);
 
     //cleaning input
