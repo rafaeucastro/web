@@ -5,10 +5,10 @@ function addTask(){
     var task = document.createElement("li");
 
     //delete button
-    // var deleteIcon = document.createElement("i");
-    // deleteIcon.className = "fa-light fa-delete-left";
+    var deleteIcon = document.createElement("img");
+    deleteIcon.src = "icons/delete.png";
     var deleteButton = document.createElement("button");
-    //deleteButton.append(deleteIcon);
+    deleteButton.append(deleteIcon);
     deleteButton.onclick = function () {
         taskList.removeChild(task);
     }
@@ -16,22 +16,18 @@ function addTask(){
     //label
     var taskLabel = document.createElement("input");
     taskLabel.value = taskInput.value;
-    taskLabel.style.border = "none";
-    taskLabel.style.backgroundColor = "transparent";
     taskLabel.onclick = function (){
         taskLabel.style.border = "default";
         taskLabel.style.backgroundColor = "default";
     }
 
-    //radio button
-    var radio = document.createElement("input");
-    radio.type = "radio";
-    radio.onclick = function () {
-        taskLabel.style.textDecoration = 'line-through';
-    }
+    //checkbox
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.onclick = () => markTaskAsDone(taskLabel, checkbox);
 
     //append elements
-    task.appendChild(radio);
+    task.appendChild(checkbox);
     task.appendChild(taskLabel);
     task.appendChild(deleteButton);
     taskList.appendChild(task);
@@ -40,3 +36,10 @@ function addTask(){
     taskInput.value = "";
 }
 
+function markTaskAsDone(label, checkbox){
+    if(checkbox.checked){
+        label.style.textDecoration = 'line-through';
+    } else {
+        label.style.textDecoration = 'none';
+    }
+}
