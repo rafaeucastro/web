@@ -1,137 +1,102 @@
 /* Estilize os elementos HTML de acordo com as instruções a seguir. */
 
 /* NÃO ALTERAR O HTML EXISTENTE PARA FAZER ISSO. ESCREVA APENAS CSS! PELO AMOR DE DEUS. */
+/* Faça apenas entradas com o tipo 'texto' com fundo cinza */
 
+/*Coloque uma borda vermelha em um elemento <a> quando o mouse passar por cima*/
+a:hover {
+  border: 1px solid red;
+}
 
 /* Dê ao elemento <body> a seguinte cor de fundo #bdc3c7 */
-
+body {
+  background-color: #bdc3c7;
+}
 
 /* Faça o elemento <h1> ter a cor #9b59b6 */
-
+h1 {
+  color: #9b59b6;
+}
 
 /* Torna todos os elementos <h2> laranja */
 
+h2 {
+  color: orange;
+}
 
 /* Torna todos os elementos <li> azuis (escolha seu próprio azul hexadecimal) */
-
+li {
+  color: #0000bb;
+}
 
 /* Altere o fundo em cada parágrafo para ficar amarelo */
-
+p {
+  background-color: yellow;
+}
 
 /* Faça com que todas as entradas de texto (input com type text) tenham uma borda vermelha de 3 pixels */
+input[type*="text"] {
+  border: 3px solid red;
+  background-color: gray;
+}
 
-
-/* Dar tudo com a classe 'hello' um fundo branco */
-
+/* Dar todas com a classe 'hello' um fundo branco */
+.hello {
+  background-color: white;
+}
 
 /* Dê ao elemento com o ID 'special' uma borda azul sólida de 2px (escolha seu próprio rgb azul) */
-
+#special {
+  border: 2px solid rgb(0, 100, 240);
+}
 
 /* Faça todos os <p> que estão aninhados dentro de divs terem fonte com tamanho 25px */
-
-
-/* Faça apenas entradas com o tipo 'texto' com fundo cinza */
-
+div p {
+  font-size: 25px;
+}
 
 /* Dê aos dois <p> dentro do terceiro <div> um fundo rosa */
-
+div:nth-of-type(3) p {
+  background-color: #9b59b6;
+}
 
 /* Dê ao 2º <p> dentro do 3º <div> uma borda branca de 5 pixels */
-
+div:nth-of-type(3) p:nth-of-type(2) {
+  border: 2px solid white;
+}
 
 /* Faça o <em> no terceiro elemento <div> ter fonte com a cor branca e fonte 20px */
-
-
-
-/* DESAFIOS BONUS */
-/* Você pode precisar pesquisar alguns outros seletores e propriedades */
+div:nth-of-type(3) em {
+  color: white;
+  font-size: 20px;
+}
 
 /* Faz com que todas as caixas de seleção "checkbox" tenham uma margem esquerda de 50px */
-
+input[type*="checkbox"] {
+  margin-left: 50px;
+}
 
 /* Torne os elementos <label> todos em MAIÚSCULAS sem mudar o HTML (definitivamente pareça este acima */
-
+label {
+  text-transform: uppercase;
+}
 
 /* Faça a primeira letra do elemento com o id 'special' verde e 100px tamanho da fonte (tamanho da fonte: 100) */
-
+#special::first-letter {
+  color: green;
+  font-size: 100;
+}
 
 /* Faça com que a cor do elemento <h1> mude para azul quando passa o mouse sobre */
-
+h1:hover {
+  color: blue;
+}
 
 /* Faça o elemento <a> que foi visitado ter cor de fonte cinza */
-
-
-a:hover {
-    border: 1px solid red;
-}
-
-body {
-    background-color: #bdc3c7;
-}
-
-h1 {
-    color: #9b59b6;
-}
-
-h2 {
-    color: orange;
-}
-
-li {
-    color: #0000bb;
-}
-
-p {
-    background-color: yellow;
-}
-
-input[type*="text"] {
-    border: 3px solid red;
-    background-color: gray;
-}
-
-.hello {
-    background-color: white;
-}
-
-#special {
-    border: 2px solid rgb(0, 100, 240);
-}
-
-div p {
-    font-size: 25px;
-}
-
-div:nth-of-type(3) p{
-    background-color: #9b59b6;
-}
-
-div:nth-of-type(3) p:nth-of-type(2){
-    border: 2px solid white;
-}
-
-div:nth-of-type(3) {
-    color: white;
-    font-size: 20px;
-}
-
-input[type*="checkbox"] {
-    margin-left: 50px;
-}
-
-label {
-    text-transform: uppercase;
-}
-
-#special::first-letter{
-    color: green;
-    font-size: 100;
-}
-
-h1:hover {
-    color: blue;
-}
-
 a:visited {
-    color: silver;
+  color: silver;
+}
+
+input:focus {
+    background-color: bisque;
 }
