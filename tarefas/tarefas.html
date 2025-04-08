@@ -5,26 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarefas</title>
-    <link rel="stylesheet" href="tarefas.css">
+    <link rel="stylesheet" type="text/css" href="tarefas.css" media="screen">
+    <script type="module" src="tarefas.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Tarefas</h1>
+    <header class="column">
+        <h1>Gerenciador de tarefas</h1>
     </header>
     <main>
-        <div class="add">
-            <label for="add-task"></label>
-            <input type="text" id="add-task">
-            <button onclick="addTask()">Add</button>
+        <div id="add-task" class="row">
+            <button id="add-button"><img id="add-icon" src="icons/VectorPlus.svg" alt="add"></button>
+            <input class="name" id="task-name" title="task-name" type="text" placeholder="Adicionar nova tarefa">
         </div>
-        <div id="tasks">
-            <ul id="task-list">
-                <li>
-                </li>
-            </ul>
-        </div>
+        <ul id="task-list" class="column flex-start">
+        </ul>
     </main>
-    <script src="tarefas.js">
-    </script>
+    <aside>  
+    </aside>
 </body>
 </html>
