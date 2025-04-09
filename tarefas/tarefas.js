@@ -1,17 +1,25 @@
-import { initializeDB } from "./js/indexDatabase.js";
-
-initializeDB()
+import { loadTasksFromDB, save } from "./js/task_repo.js"
+import { TaskForm } from "./js/task.js";
 
 const taskNameInputE = document.getElementById("task-name");
 const addTaskButton = document.getElementById("add-button");
 const taskListE = document.getElementById("task-list");
-const tasks = ["Colocar comida pro catioro"];
+let tasks = [];
 
 //Load the tasks in the storage to show
-for (const task in tasks) {
-  if (Object.prototype.hasOwnProperty.call(tasks, task)) {
-    const item = tasks[task];
-    addNewTask(item);
+loadTasksFromDB(reloadTasks);
+
+function reloadTasks(data, error) {
+  clearTaskElements();
+  if (data) {
+    tasks = data;
+
+    for (const task in tasks) {
+      if (Object.hasOwn(tasks, task)) {
+        const item = tasks[task];
+        appendTaskElement(item);
+      }
+    }
   }
 }
 
@@ -20,36 +28,51 @@ const onAddNewTask = () => {
   const empty = !taskName.trim();
   if (empty) return;
 
-  tasks.push(taskName);
   addNewTask(taskName);
+  tasks.push(taskName);
   clearInputText(taskNameInputE);
-}
+};
 
 taskNameInputE.addEventListener("keydown", (ev) => {
   const submitted = ev.key == "Enter";
   if (!submitted) return;
 
-  onAddNewTask()
+  onAddNewTask();
 });
 
 addTaskButton.onclick = onAddNewTask;
 
+function saveTaskOnDB(taskName) {
+  const task = new TaskForm(taskName);
+  save(task);
+  return task;
+}
+
 function addNewTask(taskName) {
-  const newTask = createTaskElement(taskName);
+  const task = saveTaskOnDB(taskName);
+  appendTaskElement(task);
+}
+
+function appendTaskElement(task) {
+  const newTask = createTaskElement(task);
   taskListE.appendChild(newTask);
 }
 
-function createTaskElement(taskName) {
+function clearTaskElements() {
+  taskListE.innerHTML = "";
+}
+
+function createTaskElement(task) {
   const item = document.createElement("li");
 
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
-  checkbox.id = Date.now();
+  checkbox.id = task.id;
   checkbox.onclick = () => markTaskAsDone(taskLabel, checkbox);
 
   const taskLabel = document.createElement("label");
   taskLabel.htmlFor = checkbox.id;
-  taskLabel.textContent = taskName;
+  taskLabel.textContent = task.name;
 
   item.appendChild(checkbox);
   item.appendChild(taskLabel);
