@@ -59,3 +59,23 @@ export async function loadTasksFromDB(callback) {
     callback(null, e.target.error);
   };
 }
+
+export async function deleteTask(taskId, callback) {
+  const store = await getTaskStore(TransactionMode.readwrite);
+  const deleteRequest = store.delete(taskId);
+
+  deleteRequest.onerror = (e) => {
+    console.log("Error reading tasks", e.target.error);
+    callback(e.target.error);
+  };
+}
+
+export async function clearAllTasks(callback) {
+  const store = await getTaskStore(TransactionMode.readwrite);
+  const clearRequest = store.clear();
+
+  clearRequest.onerror = (e) => {
+    console.log("Error reading tasks", e.target.error);
+    callback(e.target.error);
+  };
+}

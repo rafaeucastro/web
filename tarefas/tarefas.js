@@ -1,8 +1,9 @@
-import { loadTasksFromDB, save } from "./js/task_repo.js"
+import { clearAllTasks, loadTasksFromDB, save } from "./js/task_repo.js";
 import { TaskForm } from "./js/task.js";
 
 const taskNameInputE = document.getElementById("task-name");
 const addTaskButton = document.getElementById("add-button");
+const clearAllButton = document.getElementById("clear-all-button");
 const taskListE = document.getElementById("task-list");
 let tasks = [];
 
@@ -42,6 +43,14 @@ taskNameInputE.addEventListener("keydown", (ev) => {
 
 addTaskButton.onclick = onAddNewTask;
 
+clearAllButton.addEventListener("click", () => {
+  clearAllTasks((e) => {
+    alert("Erro ao tentar limpar tarefas");
+  });
+
+  loadTasksFromDB(reloadTasks);
+});
+
 function saveTaskOnDB(taskName) {
   const task = new TaskForm(taskName);
   save(task);
@@ -67,10 +76,13 @@ function createTaskElement(task) {
 
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
+  checkbox.classList.add("form-check-input");
+  checkbox.classList.add("me-2");
   checkbox.id = task.id;
   checkbox.onclick = () => markTaskAsDone(taskLabel, checkbox);
 
   const taskLabel = document.createElement("label");
+  taskLabel.classList.add("form-check-label");
   taskLabel.htmlFor = checkbox.id;
   taskLabel.textContent = task.name;
 
